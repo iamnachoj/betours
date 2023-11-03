@@ -6,7 +6,7 @@ export default function AllEvents() {
         <div>
             <h1>Hello Events!</h1>
             <h2>See all events here</h2>
-            <EventList items={DATA_BASE_EVENTS_COLLECTION}/>
+            <EventList events={DATA_BASE_EVENTS_COLLECTION}/>
         </div>
     )
 }
