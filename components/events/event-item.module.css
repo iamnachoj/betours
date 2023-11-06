@@ -62,10 +62,6 @@
   margin-top: 1.5rem;
 }
 
-.actions a:hover {
-  color: purple;
-}
-
 .actions a span {
   vertical-align: middle;
 }
