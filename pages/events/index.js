@@ -3,10 +3,9 @@ import { DATA_BASE_EVENTS_COLLECTION } from "../../data-base";
 
 export default function AllEvents() {
     return (
-        <div>
-            <h1>Hello Events!</h1>
-            <h2>See all events here</h2>
+        <>
+            <h2>All Events</h2>
             <EventList events={DATA_BASE_EVENTS_COLLECTION}/>
-        </div>
+        </>
     )
 }

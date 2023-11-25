@@ -6,7 +6,7 @@ export const DATA_BASE_EVENTS_COLLECTION = [
         "location": "La Boqueria Market, Barcelona, Spain",
         "date": "2024-04-15",
         "image": "https://images.ctfassets.net/qr8kennq1pom/5Odp3sElFAGyWkzE2G5TR2/7491b42e521dac513e20e1de13e80ab0/Traditional_and_Unique_food_in_Spain.jpg?fm=jpg&fl=progressive&q=70",
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "tour002",
@@ -15,7 +15,7 @@ export const DATA_BASE_EVENTS_COLLECTION = [
         "location": "Machu Picchu, Cusco Region, Peru",
         "date": "2024-06-10",
         "image": "https://media.npr.org/assets/img/2021/08/09/gettyimages-1229409136-db9b54a1546b7f503c7e812178f4cab5b707aca3-s1100-c50.jpg",
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "tour003",
@@ -24,7 +24,7 @@ export const DATA_BASE_EVENTS_COLLECTION = [
         "location": "Serengeti National Park, Tanzania",
         "date": "2024-08-20",
         "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2018/08/shutterstock_90117172.jpg",
-        "isFeatured": true
+        "isFeatured": false
     },
     {
         "id": "tour004",
@@ -42,7 +42,7 @@ export const DATA_BASE_EVENTS_COLLECTION = [
         "location": "Ubud, Bali, Indonesia",
         "date": "2024-12-01",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRch-kvrphcqW2bhG6YQyZAiN8ctjgbve8bottYQYZJww&s",
-        "isFeatured": false
+        "isFeatured": true
     }
 ]
 
