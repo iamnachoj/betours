@@ -1,0 +1,16 @@
+.spinner::after {
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 0.15em solid #ccc;
+    border-top: 0.12em solid #333;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
