@@ -55,11 +55,12 @@ export function getAllEvents() {
 }
 
 export function getFilteredEvents(dateFiltered) {
-    const { year, month } = dateFiltered
+    const year = Number(dateFiltered.year);
+    const month = Number(dateFiltered.month);
 
     return DATA_BASE_EVENTS_COLLECTION.filter(event => {
         const eventDate = new Date(event.date)
-        return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1;
+        return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1
     })
 }
 
