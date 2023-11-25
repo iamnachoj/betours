@@ -1,8 +1,11 @@
+import { useRouter } from "next/router";
+import { getEventById } from "../../data-base";
+import EventDetails from "../../components/events/event-details";
+
 export default function EventDetailsPage() {
-    return (
-        <div>
-            <h1>Event Details</h1>
-            <h2>See all details here</h2>
-        </div>
-    )
+    const router = useRouter()
+    const eventId = router.query.eventId;
+    const event = getEventById(eventId);
+
+    return <EventDetails event={event}/>
 }

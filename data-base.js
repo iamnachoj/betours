@@ -64,5 +64,6 @@ export function getFilteredEvents(dateFiltered) {
 }
 
 export function getEventById(id) {
-    return DATA_BASE_EVENTS_COLLECTION.filter(event => event.id === id)
+    const filteredEvents = DATA_BASE_EVENTS_COLLECTION.filter(event => event.id === id);
+    return filteredEvents.length > 0 ? filteredEvents[0] : null;
 }
