@@ -43,7 +43,43 @@ export const DATA_BASE_EVENTS_COLLECTION = [
         "date": "2024-12-01",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRch-kvrphcqW2bhG6YQyZAiN8ctjgbve8bottYQYZJww&s",
         "isFeatured": true
-    }
+    },
+    {
+        "id": "tor001",
+        "title": "Historical Journey through Rome",
+        "description": "Discover the rich history of Rome as we explore ancient ruins, iconic landmarks, and indulge in authentic Italian cuisine. This tour offers a captivating journey through time, blending the modern and ancient wonders of the Eternal City.",
+        "location": "Rome, Italy",
+        "date": "2024-04-15",
+        "image": "https://thumbs.dreamstime.com/b/rome-italy-colosseum-coliseum-sunrise-144201572.jpg",
+        "isFeatured": true
+    },
+    {
+        "id": "tor003",
+        "title": "Cultural Extravaganza in Kyoto",
+        "description": "Immerse yourself in the enchanting culture of Kyoto, Japan. This tour takes you through historic temples, traditional tea ceremonies, and the beauty of cherry blossoms. Experience the elegance of Japan's ancient capital.",
+        "location": "Kyoto, Japan",
+        "date": "2024-08-10",
+        "image": "https://media.istockphoto.com/id/1146262403/photo/woman-wearing-japanese-traditional-kimono-walking-at-historic-higashiyama-district-in-spring.jpg?s=612x612&w=0&k=20&c=0LOWlTmIxZBGblGZafxBWMnobeFW1_Yi0LdFZND2Lzg=",
+        "isFeatured": true
+    },
+    {
+        "id": "tour006",
+        "title": "Scenic Road Trip along the Pacific Coast",
+        "description": "Hit the open road for a breathtaking journey along the Pacific Coast. From stunning coastal cliffs to charming seaside towns, this road trip promises scenic beauty and unforgettable moments.",
+        "location": "Pacific Coast Highway, USA",
+        "date": "2024-03-03",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52SUt3iS5GBkRJXIUI2VTctjZWgrmuLEGrttyl-WtiA&s",
+        "isFeatured": true
+    },
+    {
+        "id": "tour008",
+        "title": "Relaxing Retreat in the Maldives",
+        "description": "Escape to the idyllic beaches of the Maldives for a luxurious and relaxing retreat. Indulge in overwater bungalows, pristine white sands, and crystal-clear turquoise waters in this tropical paradise.",
+        "location": "Maldives",
+        "date": "2024-05-12",
+        "image": "https://media-cdn.tripadvisor.com/media/photo-s/28/b5/c1/a7/water-villa-aerial.jpg",
+        "isFeatured": true
+    },
 ]
 
 export function getFeaturedEvents() {
