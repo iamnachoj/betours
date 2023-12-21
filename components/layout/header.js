@@ -30,14 +30,14 @@ export default function Header(){
             <nav onClick={toggleNavBar} className={`${classes.nav} ${showNav ? classes.show : ""}`}>
                 <ul>
                     <li><Link href="/events">All Events</Link></li>
-                    <li><Link href="/">About</Link></li>
+                    <li><Link href="/about">About</Link></li>
                     <li><Link href="/">Contact</Link></li>
                 </ul>
             </nav>
             {/*Desktop Navigation*/}
             <nav className={classes.desktopNav}>
                 <Link href="/events">All Events</Link>
-                <Link href="/">About</Link>
+                <Link href="/about">About</Link>
                 <Link href="/">Contact</Link>
             </nav>
         </header>
