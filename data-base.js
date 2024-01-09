@@ -83,13 +83,3 @@ export const DATA_BASE_EVENTS_COLLECTION = [
         "isFeatured": true
     },
 ]
-
-export function getFilteredEvents(dateFiltered) {
-    const year = Number(dateFiltered.year);
-    const month = Number(dateFiltered.month);
-
-    return DATA_BASE_EVENTS_COLLECTION.filter(event => {
-        const eventDate = new Date(event.date)
-        return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1
-    })
-}

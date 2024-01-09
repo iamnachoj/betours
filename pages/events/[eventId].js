@@ -1,4 +1,4 @@
-import {getAllEvents, getEventById} from "../../helpers/api-util";
+import {getEventById, getFeaturedEvents} from "../../helpers/api-util";
 import EventDetails from "../../components/events/event-details";
 
 EventDetailsPage.propTypes = {
@@ -10,12 +10,11 @@ export default function EventDetailsPage({event}) {
 }
 
 export async function getStaticPaths() {
-    const events = await getAllEvents();
+    const events = await getFeaturedEvents();
     const paths = events.map(event => ({params: {eventId: event.id}}))
-    console.log('paths:', paths)
     return {
         paths,
-        fallback: false,
+        fallback: 'blocking',
     }
 }
 
@@ -25,6 +24,7 @@ export async function getStaticProps(context) {
     return {
         props: {
             event
-        }
+        },
+        revalidate: 600
     }
 }

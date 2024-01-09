@@ -2,7 +2,6 @@ import classes from "./event-details.module.css";
 
 export default function EventDetails(props) {
     const { event }  = props;
-    console.log(event)
     if (!props.event) {
         return <p>Oops! this tour is no longer available! :(</p>
     }
