@@ -1,12 +1,19 @@
 import {getEventById, getFeaturedEvents} from "../../helpers/api-util";
 import EventDetails from "../../components/events/event-details";
+import Head from "next/head";
 
 EventDetailsPage.propTypes = {
-    event : {}
+    event: {}
 }
 
 export default function EventDetailsPage({event}) {
-    return <EventDetails event={event}/>
+    return (<>
+        <Head>
+            <title>Betours: {event.title}</title>
+            <meta name="description" content={event.description}/>
+        </Head>
+        <EventDetails event={event}/>
+    </>)
 }
 
 export async function getStaticPaths() {

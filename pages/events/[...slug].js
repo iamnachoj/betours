@@ -1,8 +1,8 @@
 import EventList from "../../components/events/event-list";
-import { useRouter } from "next/router";
 import Spinner from "../../components/atoms/spinner";
 import Button from "../../components/atoms/button";
 import {getFilteredEvents} from "../../helpers/api-util";
+import Head from "next/head";
 
 export default function FilteredEventsPage(props) {
     const {filteredEvents, year, month } = props
@@ -11,6 +11,10 @@ export default function FilteredEventsPage(props) {
 
     return (
         <>
+            <Head>
+                <title>Betours: Filtered Events</title>
+                <meta name="description" content="filtered events and tours by year and month"/>
+            </Head>
             {!filteredEvents &&  <div className='center'><Spinner/></div>}
             <div>
                 <h2>Filtered events</h2>
