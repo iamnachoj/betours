@@ -1,3 +1,5 @@
+import {getAllEvents} from "./helpers/api-util";
+
 export const DATA_BASE_EVENTS_COLLECTION = [
     {
         "id": "tour001",
@@ -82,14 +84,6 @@ export const DATA_BASE_EVENTS_COLLECTION = [
     },
 ]
 
-export function getFeaturedEvents() {
-    return  DATA_BASE_EVENTS_COLLECTION.filter(event => event.isFeatured)
-}
-
-export function getAllEvents() {
-    return DATA_BASE_EVENTS_COLLECTION
-}
-
 export function getFilteredEvents(dateFiltered) {
     const year = Number(dateFiltered.year);
     const month = Number(dateFiltered.month);
@@ -98,9 +92,4 @@ export function getFilteredEvents(dateFiltered) {
         const eventDate = new Date(event.date)
         return eventDate.getFullYear() === year && eventDate.getMonth() === month - 1
     })
-}
-
-export function getEventById(id) {
-    const filteredEvents = DATA_BASE_EVENTS_COLLECTION.filter(event => event.id === id);
-    return filteredEvents.length > 0 ? filteredEvents[0] : null;
 }
